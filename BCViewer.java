@@ -1,3 +1,7 @@
+/*
+ * Initializes a JOptionPane and runs BCGuesser 
+ */
+
 import javax.swing.JOptionPane;
 
 public class BCViewer {

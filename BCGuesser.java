@@ -1,3 +1,7 @@
+/*
+ * Generates a random number and plays Cows and Bulls with the user
+ */
+
 import javax.swing.*;
 
 import java.awt.*;
