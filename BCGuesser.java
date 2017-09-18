@@ -19,9 +19,9 @@ public class BCGuesser extends JFrame implements ActionListener
 
 	private static final String EMPTY_STRING = "";
 	private static final String NEWLINE = System.getProperty("line.separator");
-	private static final String RULES = ("Instructions: Guess four-digit numbers with no repeats and no \nzeros. "
-			+ "A \"bull\" means that you have a correct digit in the correct \nplace, "
-			+ "and a \"cow\" means that you have a correct digit, but in the \nwrong place." + NEWLINE + NEWLINE);
+	private static final String RULES = ("Rules: Guess four-digit numbers with no repeats and no zeros. "
+			+ "\nA \"bull\" means that you have a correct digit in the correct \nplace, "
+			+ "and a \"cow\" means that you have a correct digit, but in \nthe wrong place." + NEWLINE + NEWLINE);
 	
 	private final JLabel instructions = new JLabel ("Guess a number: ");
 	
@@ -194,7 +194,8 @@ public class BCGuesser extends JFrame implements ActionListener
 					}
 				}
 			}
-			textArea.append ("Your guess: " + guess + "     |     Bulls: " + bulls + "   Cows: " + cows + NEWLINE);
+			textArea.append ("     " + numOfGuesses + "       |       Your guess: " + guess + 
+					"       |       Bulls: " + bulls + "   Cows: " + cows + NEWLINE);
 		}
 		
 		clearText();
